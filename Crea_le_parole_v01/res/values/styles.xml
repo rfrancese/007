@@ -1,0 +1,25 @@
+<resources>
+
+    <!--
+        Tema base dell'applicazione, dipende dal livello API. Questo tema è sostituito
+        da AppBaseTheme da res/values-vXX/styles.xml sui device più recenti.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Le customizazzioni dei temi disponibili nelle API più recenti possono andare in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="styleName">
+        <item name="android:background">@drawable/clp_sfondo</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">10dp</item>
+    </style>
+</resources>

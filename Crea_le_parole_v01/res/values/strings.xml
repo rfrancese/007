@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Crea le parole</string>
+    <string name="settings">Impostazioni</string>
+    <string name="username">Username</string>
+    <string name="emailFacoltativo">E-mail (facoltativo)</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="registrati">Registrati</string>
+    <string name="sfondo">sfondo</string>
+    <string name="login">Login</string>
+    <string name="registrazione">Registrazione</string>
+    <string name="password_persa">Password Persa</string>
+    <string name="ricevi_email">Ricevi Email</string>
+    <string name="title_activity_main_menu">Main_menu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

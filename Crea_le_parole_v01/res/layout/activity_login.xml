@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+     >
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/clp_sfondo"
+            android:descendantFocusability="beforeDescendants"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="228dp"
+                android:layout_height="234dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/sfondo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/clp_scritta" />
+
+            <EditText
+                android:id="@+id/loginUsername"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/style_textfield_textfield_disabled_holo_light"
+                android:ems="10"
+                android:hint="@string/username"
+                android:textColor="#000000"
+                android:textColorHint="#ffff"
+                android:textSize="20sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/pword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/style_textfield_textfield_disabled_holo_light"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textColorHint="#ffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/loginErrorMsg"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:textColor="#FF0000" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="200dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:text="@string/login"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/registerbtn"
+                android:layout_width="200dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:text="@string/registrazione"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/passres"
+                android:layout_width="200dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:text="@string/password_persa"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
