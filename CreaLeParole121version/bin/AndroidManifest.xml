@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skynet.clp"
+    android:versionCode="4"						
+    android:versionName="1.2.1" >
+    
+    <!-- IMPORTANTISSIMOOOO O O O O O OO O O O O O O O O  OO O  -->
+    <!-- Ad ogni release aggiornare android:versionCode (incrementandolo di 1) e 
+    android:versionName (incrementando di .1 (è solo da un punto di vista estetico visualizzato sullo store)) -->
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	"service android:name="MusicService"android:enabled="true"
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icona_app"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.DeviceDefault.Light.DarkActionBar" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- android:value="@integer/google_play_services_version" -->
+
+        <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="com.CreaLeParole.Login"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.CreaLeParole.Register"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.CreaLeParole.Registered"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.CreaLeParole.PasswordReset"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.CreaLeParole.ChangePassword"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.CreaLeParole.menu_principale"
+            android:label="@string/title_activity_main_menu" >
+        </activity>
+        <activity
+            android:name="com.CreaLeParole.Impostazioni"
+            android:label="@string/title_activity_impostazioni"
+            android:parentActivityName="com.CreaLeParole.menu_principale" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.CreaLeParole.menu_principale" />
+        </activity>
+        <activity
+            android:name="com.CreaLeParole.Info"
+            android:label="@string/title_activity_info"
+            android:parentActivityName="com.CreaLeParole.Impostazioni" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.CreaLeParole.Impostazioni" />
+        </activity>
+        <activity
+            android:name="com.CreaLeParole.RicercaPartita"
+            android:label="@string/title_activity_ricerca_partita_casuale"
+            android:parentActivityName="com.CreaLeParole.menu_principale" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.CreaLeParole.menu_principale" />
+        </activity>
+        <activity
+            android:name="com.CreaLeParole.CercaGiocatore"
+            android:label="@string/title_activity_cerca_giocatore" >
+        </activity>
+        <activity
+            android:name="com.CreaLeParole.Splash_screen"
+            android:label="@string/title_activity_main_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.CreaLeParole.Controllo_connessione"
+            android:label="@string/title_activity_controllo_connessione" >
+        </activity>
+    </application>
+    <!-- Allow to connect with internet and to know the current network state -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+
+</manifest>
